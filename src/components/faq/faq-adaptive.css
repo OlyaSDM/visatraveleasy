@@ -1,0 +1,10 @@
+/*@font-face {*/
+/*    font-family: 'MeieScriptRegular';*/
+/*    src: url('..//..//fonts/MeieScriptRegular.ttf');*/
+/*}*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
