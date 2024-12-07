@@ -3,7 +3,10 @@ import './reviews-adaptive.css';
 
 const Reviews = () => {
     return (
-        <h1>TEST REVIEWS</h1>
+        <section className='reviews'>
+          <h2>Отзывы наших <span>клиентов</span></h2>
+          <button className='review-btn'>ВСЕ ОТЗЫВЫ</button>
+        </section>
     )
 }
 

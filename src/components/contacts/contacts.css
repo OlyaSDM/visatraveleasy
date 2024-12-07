@@ -4,7 +4,52 @@
 /*}*/
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  /* background-color: rgba(184, 146, 108, 1); */
+  background-image: url('../../assets/footer-background.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 547px
+}
+
+footer section{
+  width: 1560px;
+  margin: 137px 0 53px 0;;
+  display: flex;
+  gap: 322px;
+}
+
+h5{
+  font-size: 24px;
+  font-weight: 700;
+}
+.contacts-info {
+  flex: 1;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact p {
+  line-height: 20px;
+}
+
+.contact p span {
+  font-weight: 800;
+}
+
+.contact img {
+  padding-right: 36px;
+}
+
+.contact-form{
+  flex: 2;
 }
