@@ -3,8 +3,19 @@
 /*    src: url('..//..//fonts/MeieScriptRegular.ttf');*/
 /*}*/
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@media (max-width: 505px) {
+    .card_benefits {
+        margin: 10px 10px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .card_benefits {
+        margin: 10px 5px;
+    }
+
+    .card {
+        margin: 10px 5px;
+    }
 }
