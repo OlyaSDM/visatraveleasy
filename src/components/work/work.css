@@ -1,0 +1,120 @@
+/*@font-face {*/
+/*    font-family: 'MeieScriptRegular';*/
+/*    src: url('..//..//fonts/MeieScriptRegular.ttf');*/
+/*}*/
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --third-family: "Poppins", sans-serif;
+  --font3: "Oswald", sans-serif;
+}
+
+.section_work {
+  background-image: url("..//..//assets/bg_work.png");
+  width: 100%;
+  margin-top: -70px;
+  background-size: cover;
+}
+
+.content_work {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 86px;
+  padding-bottom: 180px;
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+}
+.h1-benefits {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: lighter;
+  font-size: clamp(1.5rem, 2vw + 2rem, 5rem);
+  text-transform: uppercase;
+  color: #3f3f3f;
+}
+
+.b_work {
+  font-weight: 700;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: clamp(1.5rem, 2vw + 2rem, 5rem);
+  text-transform: uppercase;
+  color: #b8926c;
+  align-items: center;
+}
+
+.content_row {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 94px;
+}
+
+.visa {
+  width: 100%;
+  max-width: 589px;
+  height: auto;
+  box-shadow: 5px 10px 15px 0 rgba(15, 15, 15, 0.35);
+}
+
+.top_work {
+  margin-top: 40px;
+}
+.steps_work {
+  display: flex;
+  flex-direction: column;
+}
+
+.first_steps {
+  display: flex;
+  gap: 44px;
+}
+.first_step {
+  display: flex;
+  gap: 25px;
+}
+
+.number {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 68px;
+  letter-spacing: 0.03em;
+  color: #b8926c;
+}
+.text_step {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 4px;
+}
+.name_step {
+  width: 100%;
+  max-width: 290px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.23077;
+  color: #0f0f0f;
+}
+
+.description {
+  width: 100%;
+  max-width: 318px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #353434;
+}
+
+.third {
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
