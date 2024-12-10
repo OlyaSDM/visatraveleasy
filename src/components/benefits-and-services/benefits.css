@@ -182,7 +182,6 @@ color: #fff;
 .section_benefits {
     width: 100%;
     background-size: cover; 
-    background-position: center; 
     background-image: url('..//..//assets/bg-b.png');
     margin-top: -70px;
 }
@@ -194,7 +193,7 @@ color: #fff;
     flex-wrap: wrap;
     width: 100%;
     padding-top: 116px;
-    padding-bottom: 100px;
+    padding-bottom: 170px;
     margin-left: auto;
     margin-right: auto;
 }
