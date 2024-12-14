@@ -61,7 +61,7 @@ h2 span {
   line-height: 17.51px;
   letter-spacing: 0.06em;
   text-align: left;
-  padding: 47px 0 22px 17px;
+  padding: 40px 0 15px 17px;
 }
 
 .card-top p{
@@ -71,7 +71,7 @@ h2 span {
   line-height: 21.75px;
   letter-spacing: 0.03em;
   text-align: left;
-  padding-left: 17px;
+  padding: 0 5px 0 17px;
 }
   
 .review-btn {
