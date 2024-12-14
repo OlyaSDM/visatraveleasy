@@ -1,7 +1,9 @@
-/*@font-face {*/
-/*    font-family: 'MeieScriptRegular';*/
-/*    src: url('..//..//fonts/MeieScriptRegular.ttf');*/
-/*}*/
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Poppins", sans-serif;
+    --font3: "Oswald", sans-serif;
+  }
 
 * {
   box-sizing: border-box;
@@ -17,15 +19,61 @@
 h2{
   font-size: 67px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: lighter;
   line-height: 82px;
+  font-family: var(--font-family);
 }
 
 h2 span {
   color: rgba(184, 146, 108, 1);
   font-weight: 700;
 }
+.wrap{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 79px;
+}
 
+.card-rectangle{
+  background-image: url('../../assets/Rectangle.png');
+  background-repeat: no-repeat;
+  height: 310px;
+  width: 321px;
+  position: relative;
+}
+
+.card-top{
+  width: 321px;
+  height: 286px;
+  background-color:rgba(244, 244, 244, 1);
+  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.card-top h5{
+  font-family: var(--font3);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 17.51px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  padding: 47px 0 22px 17px;
+}
+
+.card-top p{
+  font-family: var(--third-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.75px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding-left: 17px;
+}
+  
 .review-btn {
   margin: 110px 0 100px 0;
   height: 74px;
