@@ -5,11 +5,11 @@ import telega from '../../assets/telega.png';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contacts = () => {
-  const [state, handleSubmit] = useForm('xvoezwel');
+  const [state, handleSubmit] = useForm('xpwzgzny');
 
   return (
     <footer>
-      <section>
+      <section className='contacts'>
         <div className='contacts-info'>
           <h5>Контакты</h5>
           <div className='contact'>
@@ -27,22 +27,23 @@ const Contacts = () => {
   
         <form method="POST" onSubmit={handleSubmit} className='contact-form'>
           <h3>Остались вопросы?</h3>
-          <label htmlFor="name">Full Name</label>
-          <input id="name" type="text" name="name" required />
-          <ValidationError prefix="Name" field="name" className="fieldErrors" errors={state.errors} />
+          <div className='name-email'>
+            <input id="name" type="text" name="name" required placeholder='Ваше имя'/>
+            <ValidationError prefix="Name" field="name" className="fieldErrors" errors={state.errors} />
 
-          <label htmlFor="email">Email Address</label>
-          <input id="email" type="email" name="email" required />
-          <ValidationError prefix="Email" field="email" className="fieldErrors" errors={state.errors} />
-
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+            <input id="email" type="email" name="email" required placeholder='E-mail'/>
+            <ValidationError prefix="Email" field="email" className="fieldErrors" errors={state.errors} />
+          </div>
+          
+          <textarea id="message" name="message" required placeholder='Введите ваше сообщение' className='textarea'></textarea>
           <ValidationError prefix="Message" field="message" className="fieldErrors" errors={state.errors} />
 
-          <button type="submit" disabled={state.submitting}>
-            Submit
-          </button>
-          <ValidationError className="formErrors" errors={state.errors} />
+          <div>
+            <button type="submit" disabled={state.submitting} className='submit-btn'>
+              Отправить сообщение
+            </button>
+            <ValidationError className="formErrors" errors={state.errors} />
+          </div>
         </form>
       )}    
       </section>
