@@ -3,8 +3,90 @@
 /*    src: url('..//..//fonts/MeieScriptRegular.ttf');*/
 /*}*/
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@media (max-width: 1408px) {
+    .text-main {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .first_text {
+      font-size: 2vw;
+    }
+  
+    .h1_main {
+      font-size: 8vw;
+    }
+  
+    .third_text {
+      font-size: 3vw;
+    }
+  
+    .four_text {
+      font-size: 2.5vw;
+    }
+  
+    .main_btn {
+      font-size: 1.6vw;
+    }
+  }
+  
+  @media (max-width: 1348px) {
+    .text-main {
+      margin-left: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .head {
+      height: 800px;
+      background-position: center;
+    }
+    .burger {
+      display: flex;
+    }
+  
+    .navbar {
+      display: none;
+    }
+    .text-main {
+      text-align: center;
+      margin-top: 40px;
+      margin-left: 0px;
+    }
+    .first_text {
+      font-size: 3vw;
+    }
+  
+    .h1_main {
+      font-size: 10vw;
+    }
+  
+    .third_text {
+      font-size: 3.5vw;
+    }
+  
+    .four_text {
+      font-size: 4vw;
+    }
+  
+    .main_btn {
+      font-size: 3vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .second_all {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding-bottom: 18px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  
+  @media (max-width: 568px) {
+    .head {
+      height: 750px;
+      background-position: center;
+    }
+  }
+  
