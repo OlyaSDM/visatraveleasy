@@ -15,12 +15,12 @@ footer {
   background-image: url('../../assets/footer-background.png');
   background-size: cover;
   background-position: bottom;
-  font-family: (var var(--font-family));
+  font-family: (var(--font-family));
   display: flex;
   justify-content: center;
   align-items: center;
   height: 547px;
-  padding: 0 20px;
+  padding: 0 80px;
 }
 
 .contacts{
@@ -55,7 +55,17 @@ footer {
 }
 
 .contact img {
-  padding-right: 36px;
+  padding-right: 30px;
+}
+
+.insta {
+  color: black;
+  text-decoration: none;
+}
+
+.insta:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .contact-form{
