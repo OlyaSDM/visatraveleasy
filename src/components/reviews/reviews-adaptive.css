@@ -1,0 +1,21 @@
+
+@media (max-width: 1200px) {
+    .wrap {
+        gap: 50px;
+    }
+
+    .review-btn{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrap{
+        gap: 30px;
+    }
+    
+    .review-btn {
+        margin: 60px 0;
+    }
+}
+
