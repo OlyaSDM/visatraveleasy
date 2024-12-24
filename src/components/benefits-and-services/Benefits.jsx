@@ -8,7 +8,7 @@ import icon3 from '..//..//assets/icon3.png';
 const Benefits = () => {
     return (
         <div>
-            <section className="section_services">
+            <section id="benefits" className="section_services">
                 <div className="content_services">
                     <h1 className='h1-benefits'>наши <b className='b'>услуги</b></h1>
                     <div className="wrap">
@@ -62,7 +62,7 @@ const Benefits = () => {
                 </div>
             </section>
 
-            <section className="section_benefits">
+            <section id="benefits" className="section_benefits">
                 <div className="content_benefits">
                 <h1 className='h1-benefits'>наши <b className='b'>преимущества</b></h1>
                     <div className="wrap">
