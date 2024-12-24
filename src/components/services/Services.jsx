@@ -1,14 +1,14 @@
-import './benefits.css';
-import './benefits-adaptive.css';
+import './services.css';
+import './services-adaptive.css';
 import React from 'react';
 import icon1 from '..//..//assets/icon1.png';
 import icon2 from '..//..//assets/icon2.png';
 import icon3 from '..//..//assets/icon3.png';
 
-const Benefits = () => {
+const Services = () => {
     return (
         <div>
-            <section id="benefits" className="section_services">
+            <section id="services" className="section_services">
                 <div className="content_services">
                     <h1 className='h1-benefits'>наши <b className='b'>услуги</b></h1>
                     <div className="wrap">
@@ -87,4 +87,4 @@ const Benefits = () => {
     );
 }
 
-export default Benefits;
+export default Services;
