@@ -205,5 +205,25 @@ li {
   font-size: 1.042vw;
   color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+  animation: pulse 3s infinite;
 }
+
+.main_btn:hover {
+  background-color: #fff;
+  color: #b8926c;
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px 0 rgba(15, 15, 15, 0.35);
+}
+
+@keyframes pulse {
+  20%, 100% {
+      transform: scale(1);
+  }
+  80% {
+      transform: scale(1.01);
+  }
+}
+
+
 
