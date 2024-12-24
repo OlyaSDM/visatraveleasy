@@ -14,12 +14,16 @@ const Contacts = () => {
           <h5>Контакты</h5>
           <div className='contact'>
             <img src={insta} alt="logo"/>
-            <p><span>Email:</span> info@[вашдомен].com</p>
+            <p><span>Instagram: </span>
+              <a href="https://www.instagram.com/alba___usa/" target="_blank" className='insta'>
+                My instagram
+              </a>
+            </p>
           </div>
 
           <div className='contact'>
             <img src={telega} alt="logo"/>
-            <p><span>Телефон:</span> +1 (347) 6128437</p>
+            <p><span>Телефон:</span> +1 (347) 612 8437</p>
           </div>
         </div>
 

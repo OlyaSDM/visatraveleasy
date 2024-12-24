@@ -3,7 +3,16 @@ import './about-adaptive.css';
 
 const About = () => {
 return (
-    <h1>TEST ABOUT</h1>
+    <section className='about'>
+        <div>
+            
+        </div>
+        <div>
+            <h1>ABOUT ME</h1>
+            <p></p>
+        </div>   
+    </section>
+    
 )
 }
 
