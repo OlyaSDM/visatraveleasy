@@ -1,0 +1,21 @@
+/*@font-face {*/
+/*    font-family: 'MeieScriptRegular';*/
+/*    src: url('..//..//fonts/MeieScriptRegular.ttf');*/
+/*}*/
+
+@media (max-width: 505px) {
+    .card_benefits {
+        margin: 10px 10px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .card_benefits {
+        margin: 10px 5px;
+    }
+
+    .card {
+        margin: 10px 5px;
+    }
+}
