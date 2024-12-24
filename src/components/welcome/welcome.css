@@ -83,6 +83,7 @@ li {
 }
 .a_burger {
   color: #fff;
+  text-align: center;
 }
 .li:hover .a {
   color: #b8926c;
