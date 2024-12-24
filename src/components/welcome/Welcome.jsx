@@ -5,6 +5,8 @@ import { Link } from 'react-scroll';
 
 
 const Welcome = () => {
+    const phoneNumber = "+1234567890";
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -77,7 +79,9 @@ const Welcome = () => {
                         <p className="four_text">Более 5 лет опыта и множество успешных кейсов - с нами оформление виз становится простым и быстрым.</p>
                     </div>
                 </div>
+                <a href={`tel:${phoneNumber}`} >
                 <button className="main_btn">СВЯЗАТЬСЯ С НАМИ</button>
+                </a>
             </div>
         </div>
     );
