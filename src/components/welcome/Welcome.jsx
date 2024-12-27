@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 
 const Welcome = () => {
-    const phoneNumber = "+1234567890";
+    const phoneNumber = "+1 (347) 612 8437";
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 

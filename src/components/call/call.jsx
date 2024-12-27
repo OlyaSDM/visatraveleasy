@@ -4,7 +4,7 @@ import call from '..//..//assets/call.png';
 
 const Call = () => {
     const [isVisible, setIsVisible] = useState(false);
-    const phoneNumber = "+1234567890"; 
+    const phoneNumber = "+1 (347) 612 8437"; 
 
     const handleScroll = () => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
