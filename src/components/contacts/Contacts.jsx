@@ -1,7 +1,7 @@
 import './contacts.css';
 import './contacts-adaptive.css';
-import insta from '../../assets/insta.png';
-import telega from '../../assets/telega.png';
+import instagram from '../../assets/instagram.png';
+import call from '../../assets/call_white.png';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contacts = () => {
@@ -13,7 +13,7 @@ const Contacts = () => {
         <div className='contacts-info'>
           <h5>Контакты</h5>
           <div className='contact'>
-            <img src={insta} alt="logo"/>
+            <img className="contact-icon" src={instagram} alt="logo"/>
             <p><span>Instagram: </span>
               <a href="https://www.instagram.com/alba___usa/" target="_blank" className='insta'>
                 My instagram
@@ -22,7 +22,7 @@ const Contacts = () => {
           </div>
 
           <div className='contact'>
-            <img src={telega} alt="logo"/>
+            <img className="contact-icon" src={call} alt="logo" />
             <p><span>Телефон:</span> +1 (347) 612 8437</p>
           </div>
         </div>
