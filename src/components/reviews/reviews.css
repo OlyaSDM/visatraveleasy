@@ -19,8 +19,9 @@
 h2{
   font-size: 67px;
   text-transform: uppercase;
+  color: #3f3f3f;
   font-weight: lighter;
-  line-height: 82px;
+  font-size: clamp(1.5rem, 2vw + 2rem, 5rem);
   font-family: var(--font-family);
 }
 
@@ -28,6 +29,7 @@ h2 span {
   color: rgba(184, 146, 108, 1);
   font-weight: 700;
 }
+
 .wrap{
   margin-top: 60px;
   display: flex;
