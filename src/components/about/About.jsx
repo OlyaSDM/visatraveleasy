@@ -4,7 +4,7 @@ import photo from '..//..//assets/img_about.png';
 
 const About = () => {
 return (
-    <section className='about'>
+    <section id="about" className='about'>
         <div className='about__img'>
             <img src={photo} alt="photo" />
         </div>

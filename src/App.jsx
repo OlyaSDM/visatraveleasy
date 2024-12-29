@@ -27,7 +27,6 @@ function App() {
             <Call/>
             <Top/>
         </div>
-
     );
 }
 

@@ -75,15 +75,16 @@ li {
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
-
+  text-align: center;
   text-decoration: none;
   line-height: 1.3;
   letter-spacing: 0.05em;
   text-decoration: none;
 }
-.a_burger {
+.a_burgerr {
   color: #fff;
   text-align: center;
+  margin-top: 46px;
 }
 .li:hover .a {
   color: #b8926c;
@@ -225,6 +226,3 @@ li {
       transform: scale(1.01);
   }
 }
-
-
-
