@@ -44,7 +44,7 @@ footer {
 }
 
 .contact p {
-  line-height: 20px;
+  line-height: 40px;
 }
 
 .contact p span {
@@ -52,7 +52,11 @@ footer {
 }
 
 .contact img {
-  padding-right: 30px;
+  padding-right: 20px;
+}
+
+.contact-icon{
+  width: 50px;
 }
 
 .insta {
