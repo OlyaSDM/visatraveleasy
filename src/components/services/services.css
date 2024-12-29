@@ -15,6 +15,7 @@
     width: 100%;
 height: auto;
 background: #f5f0ea;
+margin-top: 80px;
 }
 
 .content_services {
@@ -175,5 +176,3 @@ color: #fff;
 .card:nth-child(4) {
     animation-delay: 1.5s;
 }
-
-

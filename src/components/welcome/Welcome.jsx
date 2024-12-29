@@ -43,7 +43,7 @@ const Welcome = () => {
                     {window.innerWidth > 768 ? (
                         <nav className="navbar">
                             <ul className="contt">
-                                <li className="li"><Link className="a" to="welcome" spy={true} smooth={true} offset={-100} duration={500}>ОБО МНЕ</Link></li>
+                                <li className="li"><Link className="a" to="about" spy={true} smooth={true} offset={-100} duration={500}>ОБО МНЕ</Link></li>
                                 <li className="li"><Link className="a" to="services" spy={true} smooth={true} offset={-100} duration={500}>УСЛУГИ</Link></li>
                                 <li className="li"><Link className="a" to="benefits" spy={true} smooth={true} offset={-100} duration={500}>ПРЕИМУЩЕСТВА</Link></li>
                                 <li className="li"><Link className="a" to="reviews" spy={true} smooth={true} offset={-100} duration={500}>ОТЗЫВЫ</Link></li>
@@ -61,11 +61,11 @@ const Welcome = () => {
                 {window.innerWidth <= 768 && isMenuOpen && (
                     <div className={`burger-menu active`}>
                         <ul>
-                            <li><Link className="a a_burger" to="welcome" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОБО МНЕ</Link></li>
-                            <li><Link className="a a_burger" to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>УСЛУГИ</Link></li>
-                            <li><Link className="a a_burger" to="benefits" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ПРЕИМУЩЕСТВА</Link></li>
-                            <li><Link className="a a_burger" to="reviews" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОТЗЫВЫ</Link></li>
-                            <li><Link className="a a_burger" to="contacts" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>КОНТАКТЫ</Link></li>
+                            <li><Link className="a a_burgerr" to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОБО МНЕ</Link></li>
+                            <li><Link className="a a_burgerr" to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>УСЛУГИ</Link></li>
+                            <li><Link className="a a_burgerr" to="benefits" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ПРЕИМУЩЕСТВА</Link></li>
+                            <li><Link className="a a_burgerr" to="reviews" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОТЗЫВЫ</Link></li>
+                            <li><Link className="a a_burgerr" to="contacts" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>КОНТАКТЫ</Link></li>
                         </ul>
                     </div>
                 )}
