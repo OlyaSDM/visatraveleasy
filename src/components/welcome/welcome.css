@@ -80,12 +80,15 @@ li {
   line-height: 1.3;
   letter-spacing: 0.05em;
   text-decoration: none;
+  text-align: center;
 }
+
 .a_burgerr {
   color: #fff;
   text-align: center;
-  margin-top: 46px;
+  margin-top: 26px;
 }
+
 .li:hover .a {
   color: #b8926c;
   text-align: center;

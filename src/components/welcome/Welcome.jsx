@@ -3,11 +3,11 @@ import './welcome.css';
 import './welcome-adaptive.css';
 import { Link } from 'react-scroll';
 
-
 const Welcome = () => {
     const phoneNumber = "+1 (347) 612 8437";
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     const toggleMenu = () => {
         setIsMenuOpen(prevState => !prevState);
@@ -25,12 +25,16 @@ const Welcome = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth > 768) {
+            const mobile = window.innerWidth <= 768;
+            setIsMobile(mobile);
+            if (!mobile) {
                 closeMenu();
             }
         };
 
         window.addEventListener('resize', handleResize);
+        handleResize();
+
         return () => {
             window.removeEventListener('resize', handleResize);
         };
@@ -40,7 +44,13 @@ const Welcome = () => {
         <div className='head'>
             <header>
                 <div className="header">
-                    {window.innerWidth > 768 ? (
+                    {isMobile ? (
+                        <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                            <div className={`line ${isMenuOpen ? 'line-1' : ''}`}></div>
+                            <div className={`line ${isMenuOpen ? 'line-2' : ''}`}></div>
+                            <div className={`line ${isMenuOpen ? 'line-3' : ''}`}></div>
+                        </div>
+                    ) : (
                         <nav className="navbar">
                             <ul className="contt">
                                 <li className="li"><Link className="a" to="about" spy={true} smooth={true} offset={-100} duration={500}>ОБО МНЕ</Link></li>
@@ -50,22 +60,16 @@ const Welcome = () => {
                                 <li className="li"><Link className="a" to="contacts" spy={true} smooth={true} offset={-100} duration={500}>КОНТАКТЫ</Link></li>
                             </ul>
                         </nav>
-                    ) : (
-                        <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                            <div className={`line ${isMenuOpen ? 'line-1' : ''}`}></div>
-                            <div className={`line ${isMenuOpen ? 'line-2' : ''}`}></div>
-                            <div className={`line ${isMenuOpen ? 'line-3' : ''}`}></div>
-                        </div>
                     )}
                 </div>
-                {window.innerWidth <= 768 && isMenuOpen && (
+                {isMobile && isMenuOpen && (
                     <div className={`burger-menu active`}>
                         <ul>
-                            <li><Link className="a a_burgerr" to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОБО МНЕ</Link></li>
-                            <li><Link className="a a_burgerr" to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>УСЛУГИ</Link></li>
-                            <li><Link className="a a_burgerr" to="benefits" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ПРЕИМУЩЕСТВА</Link></li>
-                            <li><Link className="a a_burgerr" to="reviews" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОТЗЫВЫ</Link></li>
-                            <li><Link className="a a_burgerr" to="contacts" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>КОНТАКТЫ</Link></li>
+                            <li className='a_burgerr'><Link className="a" to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОБО МНЕ</Link></li>
+                            <li className='a_burgerr'><Link className="a" to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>УСЛУГИ</Link></li>
+                            <li className='a_burgerr'><Link className="a" to="benefits" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ПРЕИМУЩЕСТВА</Link></li>
+                            <li className='a_burgerr'><Link className="a" to="reviews" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОТЗЫВЫ</Link></li>
+                            <li className='a_burgerr'><Link className="a" to="contacts" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>КОНТАКТЫ</Link></li>
                         </ul>
                     </div>
                 )}
