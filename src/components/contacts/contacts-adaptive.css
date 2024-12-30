@@ -8,8 +8,13 @@
 @media (max-width: 1200px) {
     .contacts{
         margin: 20px 0 0 0;
+        flex-direction: column;
+        width:fit-content;
+        gap: 30px;
     }
-
+    form{
+        min-width: 600px;
+    }
     .contacts-info h5{
         margin-bottom: 10px;
     }
@@ -21,10 +26,18 @@
     .submit-btn {
         margin-top: 10px;
     }
-}
 
-@media (max-width:850px) {
     .name-email {
         gap: 10px;
+    }
+}
+
+@media (max-width:650px) {
+    .contacts{
+        width: 100%;
+    }
+
+    form{
+        min-width: 90%;
     }
 }

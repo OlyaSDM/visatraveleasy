@@ -26,9 +26,7 @@ footer {
 .contacts{
   margin: 137px 0 53px 0;;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
   width: 100%;
 }
 
