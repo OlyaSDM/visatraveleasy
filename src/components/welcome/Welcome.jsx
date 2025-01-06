@@ -56,6 +56,7 @@ const Welcome = () => {
                                 <li className="li"><Link className="a" to="about" spy={true} smooth={true} offset={-100} duration={500}>ОБО МНЕ</Link></li>
                                 <li className="li"><Link className="a" to="services" spy={true} smooth={true} offset={-100} duration={500}>УСЛУГИ</Link></li>
                                 <li className="li"><Link className="a" to="benefits" spy={true} smooth={true} offset={-100} duration={500}>ПРЕИМУЩЕСТВА</Link></li>
+                                <li className="li"><Link className="a" to="FAQ" spy={true} smooth={true} offset={-100} duration={500}>FAQ</Link></li>
                                 <li className="li"><Link className="a" to="reviews" spy={true} smooth={true} offset={-100} duration={500}>ОТЗЫВЫ</Link></li>
                                 <li className="li"><Link className="a" to="contacts" spy={true} smooth={true} offset={-100} duration={500}>КОНТАКТЫ</Link></li>
                             </ul>
@@ -68,6 +69,7 @@ const Welcome = () => {
                             <li className='a_burgerr'><Link className="a" to="about" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОБО МНЕ</Link></li>
                             <li className='a_burgerr'><Link className="a" to="services" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>УСЛУГИ</Link></li>
                             <li className='a_burgerr'><Link className="a" to="benefits" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ПРЕИМУЩЕСТВА</Link></li>
+                            <li className='a_burgerr'><Link className="a" to="FAQ" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>FAQ</Link></li>
                             <li className='a_burgerr'><Link className="a" to="reviews" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>ОТЗЫВЫ</Link></li>
                             <li className='a_burgerr'><Link className="a" to="contacts" spy={true} smooth={true} offset={-100} duration={500} onClick={handleLinkClick}>КОНТАКТЫ</Link></li>
                         </ul>

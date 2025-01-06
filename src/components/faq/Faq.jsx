@@ -32,7 +32,7 @@ const Faq = () => {
     }, []);
 
     return (
-        <section className="faq">
+        <section className="faq" id="FAQ">
             <div className="faq-container">
                 <h2 className="faq-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
                 <h2 className=" faq-title faq-subtitle">FAQ</h2>
