@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Helmet } from 'react-helmet-async';
 import './welcome.css';
@@ -20,24 +20,25 @@ const Welcome = () => {
     document.body.classList.remove('no-scroll');
   };
 
-  useEffect(() => {
-    let timeoutId;
-    const handleResize = () => {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        const mobile = window.innerWidth <= 768;
-        setIsMobile(mobile);
-        if (!mobile) closeMenu();
-      }, 150);
-    };
+useEffect(() => {
+  let timeoutId;
+  const handleResize = () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      if (!mobile) closeMenu();
+    }, 150);
+  };
 
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      clearTimeout(timeoutId);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  handleResize();
+  window.addEventListener('resize', handleResize);
+  return () => {
+    clearTimeout(timeoutId);
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
+
 
   return (
     <div className="head">
@@ -51,82 +52,73 @@ const Welcome = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <html lang="ru" />
-        <link rel="preload" as="image" href="/assets/image.webp" />
-        <link rel="preload" as="style" href="/welcome.css" />
+<link rel="preload" as="style" href="/welcome.css" />
+
       </Helmet>
 
-      <img
-        src="/assets/image.webp"
-        alt="Фон VISA TRAVEL EASY"
-        className="head-background"
-        loading="lazy"
-        decoding="async"
-      />
+<header className="header">
+  {isMobile ? (
+    <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+      <div className={`line ${isMenuOpen ? 'line-1' : ''}`}></div>
+      <div className={`line ${isMenuOpen ? 'line-2' : ''}`}></div>
+      <div className={`line ${isMenuOpen ? 'line-3' : ''}`}></div>
+    </div>
+  ) : (
+    <nav className="navbar">
+      <ul className="contt">
+        {['about', 'services', 'FAQ', 'reviews', 'contacts'].map(section => (
+          <li className="li" key={section}>
+            <Link
+              className="a"
+              to={section}
+              spy
+              smooth
+              offset={-100}
+              duration={500}
+            >
+              {{
+                about: 'ОБО МНЕ',
+                services: 'УСЛУГИ',
+                FAQ: 'FAQ',
+                reviews: 'ОТЗЫВЫ',
+                contacts: 'КОНТАКТЫ',
+              }[section]}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
 
-      <header className="header">
-        {isMobile ? (
-          <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-            <div className={`line ${isMenuOpen ? 'line-1' : ''}`}></div>
-            <div className={`line ${isMenuOpen ? 'line-2' : ''}`}></div>
-            <div className={`line ${isMenuOpen ? 'line-3' : ''}`}></div>
-          </div>
-        ) : (
-          <nav className="navbar">
-            <ul className="contt">
-              {['about', 'services', 'benefits', 'FAQ', 'reviews', 'contacts'].map(section => (
-                <li className="li" key={section}>
-                  <Link
-                    className="a"
-                    to={section}
-                    spy
-                    smooth
-                    offset={-100}
-                    duration={500}
-                  >
-                    {{
-                      about: 'ОБО МНЕ',
-                      services: 'УСЛУГИ',
-                      benefits: 'ПРЕИМУЩЕСТВА',
-                      FAQ: 'FAQ',
-                      reviews: 'ОТЗЫВЫ',
-                      contacts: 'КОНТАКТЫ',
-                    }[section]}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
+  {isMobile && isMenuOpen && (
+    <div className="burger-menu active">
+      <ul>
+        {['about', 'services', 'benefits', 'FAQ', 'reviews', 'contacts'].map(section => (
+          <li className="a_burgerr" key={section}>
+            <Link
+              className="a"
+              to={section}
+              spy
+              smooth
+              offset={-100}
+              duration={500}
+              onClick={closeMenu}
+            >
+              {{
+                about: 'ОБО МНЕ',
+                services: 'УСЛУГИ',
+                FAQ: 'FAQ',
+                reviews: 'ОТЗЫВЫ',
+                contacts: 'КОНТАКТЫ',
+              }[section]}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</header>
 
-        {isMobile && isMenuOpen && (
-          <div className="burger-menu active">
-            <ul>
-              {['about', 'services', 'benefits', 'FAQ', 'reviews', 'contacts'].map(section => (
-                <li className="a_burgerr" key={section}>
-                  <Link
-                    className="a"
-                    to={section}
-                    spy
-                    smooth
-                    offset={-100}
-                    duration={500}
-                    onClick={closeMenu}
-                  >
-                    {{
-                      about: 'ОБО МНЕ',
-                      services: 'УСЛУГИ',
-                      benefits: 'ПРЕИМУЩЕСТВА',
-                      FAQ: 'FAQ',
-                      reviews: 'ОТЗЫВЫ',
-                      contacts: 'КОНТАКТЫ',
-                    }[section]}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </header>
 
       <main className="text-main">
         <section className="text">
@@ -150,4 +142,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Welcome; 
