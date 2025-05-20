@@ -20,13 +20,7 @@ function App() {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
   <link rel="preload" as="image" href="/assets/image-Jez0xn52.webp" imagesrcset="/assets/image-Jez0xn52.webp" imagesizes="(max-width: 600px) 100vw, 600px" />
 
-  <link
-    rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-    as="style"
-    onLoad={e => { e.target.rel = 'stylesheet'; }}
-  />
-  <noscript>{'<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />'}</noscript>
+  
 </Helmet>
 
 
