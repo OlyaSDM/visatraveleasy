@@ -20,25 +20,24 @@ const Welcome = () => {
     document.body.classList.remove('no-scroll');
   };
 
-useEffect(() => {
-  let timeoutId;
-  const handleResize = () => {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
-      const mobile = window.innerWidth <= 768;
-      setIsMobile(mobile);
-      if (!mobile) closeMenu();
-    }, 150);
-  };
+  useEffect(() => {
+    let timeoutId;
+    const handleResize = () => {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        const mobile = window.innerWidth <= 768;
+        setIsMobile(mobile);
+        if (!mobile) closeMenu();
+      }, 150);
+    };
 
-  handleResize();
-  window.addEventListener('resize', handleResize);
-  return () => {
-    clearTimeout(timeoutId);
-    window.removeEventListener('resize', handleResize);
-  };
-}, []);
-
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div className="head">
@@ -52,9 +51,17 @@ useEffect(() => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <html lang="ru" />
-<link rel="preload" as="style" href="/welcome.css" />
-
+        <link rel="preload" as="image" href="/assets/image.webp" />
+        <link rel="preload" as="style" href="/welcome.css" />
       </Helmet>
+
+      <img
+        src="/assets/image.webp"
+        alt="Фон VISA TRAVEL EASY"
+        className="head-background"
+        loading="lazy"
+        decoding="async"
+      />
 
       <header className="header">
         {isMobile ? (
@@ -108,6 +115,7 @@ useEffect(() => {
                     {{
                       about: 'ОБО МНЕ',
                       services: 'УСЛУГИ',
+                      benefits: 'ПРЕИМУЩЕСТВА',
                       FAQ: 'FAQ',
                       reviews: 'ОТЗЫВЫ',
                       contacts: 'КОНТАКТЫ',
