@@ -16,11 +16,7 @@ function App() {
   return (
     <div className="App">
 <Helmet>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
   <link rel="preload" as="image" href="/assets/image-Jez0xn52.webp" imagesrcset="/assets/image-Jez0xn52.webp" imagesizes="(max-width: 600px) 100vw, 600px" />
-
-  
 </Helmet>
 
 
