@@ -18,14 +18,14 @@ return (
         <meta property="og:locale" content="ru_RU" />
       </Helmet>
         <div className='about__img'>
-<img 
-  src={photo} 
-  alt="photo" 
-    loading="lazy"
-    width={600}
-
-  sizes="(max-width: 600px) 40vw, 640px"
+<img
+  src={photo}
+  alt="photo"
+  loading="lazy"
+  width={600}
+  sizes="(max-width: 600px) 100vw, 600px"
 />
+
 
         </div>
         <div className='about__desc'>

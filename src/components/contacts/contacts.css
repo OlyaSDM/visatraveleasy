@@ -1,9 +1,4 @@
-:root {
-    --font-family: "Montserrat", sans-serif;
-    --second-family: "Roboto", sans-serif;
-    --third-family: "Poppins", sans-serif;
-    --font3: "Oswald", sans-serif;
-  }
+
 
 * {
   box-sizing: border-box;
@@ -24,41 +19,16 @@ footer {
 }
 
 .contacts{
-  margin: 50px 120px 30px 120px; 
+  margin: 137px 0 53px 0;;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 40px;
 }
-
-
-
-.contact-icon {
-  width: 50px;
-  transition: transform 0.3s ease;
-}
-
-.contact-icon:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.contacts-icons {
-  display: flex;
-  gap: 30px;
-  margin-top: 10px;
-}
-
-.contacts-icons a {
-  display: inline-block;
-}
-
 
 .contacts-info h5{
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 16px;
-
+  margin-bottom: 31px;
 }
 
 .contact {
@@ -80,7 +50,6 @@ footer {
 
 .contact-icon{
   width: 50px;
-  margin-top: 14px;
 }
 
 .insta {
