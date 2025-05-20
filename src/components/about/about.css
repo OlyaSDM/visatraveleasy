@@ -13,7 +13,6 @@
 }
 
 .about {
-    /* background-color: antiquewhite; */
     background-image: url('..//..//assets/bg_about.png');
     background-size: cover;
     margin-top: -55px;
@@ -25,12 +24,14 @@
 }
 
 .about__img {
-    width: 40vw;
-    height: 70vh;
+  width: 40vw;
+  height: auto;
 }
 
-.about__img>img {
-    width: 100%;
+.about__img > img {
+  width: 100%;
+  height: auto;
+  display: block; 
 }
 
 .about__desc {

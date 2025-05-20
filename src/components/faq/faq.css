@@ -31,6 +31,19 @@
     font-family: var(--font-family);
     text-align: center;
 }
+.faq-title-visa {
+    font-size: 27px;
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
+    font-weight: 500;
+    font-family: var(--font-family);
+        color: rgba(184, 146, 108, 1);
+    text-align: center;
+}
+
+.any {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 .faq-subtitle {
     color: rgba(184, 146, 108, 1);
