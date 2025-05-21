@@ -1,118 +1,120 @@
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+footer.footer {
+	position: relative;
+	background-image: url('../../assets/footer-background.png');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding: 80px;
+	font-family: var(--font-family);
 }
 
-footer {
-  background-image: url('../../assets/footer-background.png');
-  background-size: cover;
-  background-position: bottom;
-  font-family: (var(--font-family));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 547px;
-  padding: 0 80px;
+.footer-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
 }
 
-.contacts{
-  margin: 137px 0 53px 0;;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.contacts-container {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
-.contacts-info h5{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 31px;
+.contacts-left {
+	flex: 1;
 }
 
-.contact {
-  display: flex;
-  align-items: center;
+.contacts-left h5 {
+	font-size: 28px;
+	font-weight: 700;
+	color: #0f0f0f;
+	margin-bottom: 16px;
 }
 
-.contact p {
-  line-height: 40px;
+.footer-description {
+	font-size: 18px;
+	margin-bottom: 24px;
+	max-width: 400px;
+	color: #0f0f0f;
+
 }
 
-.contact p span {
-  font-weight: 800;
+.contacts-icons {
+	display: flex;
+	gap: 16px;
 }
 
-.contact img {
-  padding-right: 20px;
+.contact-icon {
+	width: 48px;
+	height: 48px;
+	transition: transform 0.3s ease;
 }
 
-.contact-icon{
-  width: 50px;
+.contact-icon:hover {
+	transform: scale(1.1);
 }
 
-.insta {
-  color: black;
-  text-decoration: none;
+.contacts-right {
+	flex: 1;
 }
 
-.insta:hover{
-  cursor: pointer;
-  text-decoration: underline;
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
-.contact-form{
-  max-width: 800px;
-  width: 100%;
-}
-
-.contact-form h3{
-  font-size: 24px;
-  font-weight: 700;
+.contact-form h3 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #0f0f0f;
 }
 
 .name-email {
-  width: 100%;
-  margin: 19px 0 12px 0;
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	gap: 16px;
 }
 
-#name{
-  max-width: 390px;
-  width: 100%;
-  height: 52px;
-  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
-  border: none;
-  padding-left: 10px;
-}
-
-#email{
-  max-width: 390px;
-  width: 100%;
-  height: 52px;
-  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
-  border: none;
-  padding-left: 10px;
-
+.name-email input {
+	flex: 1;
+	height: 48px;
+	padding-left: 12px;
+	border: none;
+	box-shadow: 0 4px 6px rgba(15, 15, 15, 0.35);
 }
 
 .textarea {
-  height: 135px;
-  width: 100%;
-  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
-  padding-left: 10px;
-  padding-top: 10px;
+	width: 100%;
+	height: 120px;
+	padding: 12px;
+	box-shadow: 0 4px 6px rgba(15, 15, 15, 0.35);
+	border: none;
+	resize: none;
 }
 
 .submit-btn {
-  width: 100%;
-  height: 52px;
-  margin-top: 30px;
-  background-color: rgba(15,15,15,1);
-  color: rgba(255,255,255,1);
-  font-size: 20px;
-  font-weight: 700;
-  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
+	width: 100%;
+	height: 52px;
+	background-color: #0f0f0f;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+	background-color: #ffffff;
+	color: #0f0f0f;
+}
+
+.success-message {
+	font-size: 20px;
+	font-weight: 600;
+	color: #a0e8af;
 }

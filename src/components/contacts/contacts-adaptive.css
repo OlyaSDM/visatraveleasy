@@ -1,43 +1,67 @@
-
 @media (max-width: 1300px) {
-    footer {
-        padding: 0 20px;
-    }
+	footer {
+		padding: 0 20px;
+	}
 }
 
 @media (max-width: 1200px) {
-    .contacts{
-        margin: 20px 0 0 0;
-        flex-direction: column;
-        width:fit-content;
-        gap: 30px;
-    }
-    form{
-        min-width: 600px;
-    }
-    .contacts-info h5{
-        margin-bottom: 10px;
-    }
+	.contacts {
+		margin: 20px 0 0 0;
+		flex-direction: column;
+		width: fit-content;
+		gap: 30px;
+	}
 
-    .textarea {
-        height: 100px;
-    }
+	form {
+		min-width: 600px;
+	}
 
-    .submit-btn {
-        margin-top: 10px;
-    }
+	.contacts-info h5 {
+		margin-bottom: 10px;
+	}
 
-    .name-email {
-        gap: 10px;
-    }
+	.textarea {
+		height: 100px;
+	}
+
+	.submit-btn {
+		margin-top: 10px;
+	}
+
+	.name-email {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 968px) {
+	.contacts-container {
+		flex-direction: column;
+
+	}
+
+	.name-email input {
+		flex-direction: column;
+	}
 }
 
 @media (max-width:650px) {
-    .contacts{
-        width: 100%;
-    }
 
-    form{
-        min-width: 90%;
-    }
+	.contact-form {
+		flex-direction: column;
+	}
+
+	.contacts {
+		width: 100%;
+	}
+
+	form {
+		min-width: 90%;
+	}
+
+	.name-email {
+		flex-direction: column;
+		height: 88px;
+		gap: 8px;
+	}
+
 }

@@ -1,94 +1,81 @@
-:root {
-    --font-family: "Montserrat", sans-serif;
-    --second-family: "Roboto", sans-serif;
-    --third-family: "Poppins", sans-serif;
-    --font3: "Oswald", sans-serif;
-  }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.reviews {
+	margin-top: 142px;
+	text-align: center;
 }
 
-.reviews{
-  margin-top: 142px;
-  text-align: center;
-}
-
-h2{
-  font-size: 67px;
-  text-transform: uppercase;
-  color: #3f3f3f;
-  font-weight: lighter;
-  font-size: clamp(1.5rem, 2vw + 2rem, 5rem);
-  font-family: var(--font-family);
+h2 {
+	font-size: 67px;
+	text-transform: uppercase;
+	color: #3f3f3f;
+	font-weight: lighter;
+	font-size: clamp(1.5rem, 2vw + 2rem, 5rem);
+	font-family: var(--font-family);
 }
 
 h2 span {
-  color: rgba(184, 146, 108, 1);
-  font-weight: 700;
+	color: rgba(184, 146, 108, 1);
+	font-weight: 700;
 }
 
-.wrap{
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 79px;
+.wrap {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 79px;
 }
 
-.card-rectangle{
-  background-image: url('../../assets/Rectangle.png');
-  background-repeat: no-repeat;
-  height: 310px;
-  width: 321px;
-  position: relative;
+.card-rectangle {
+	background-image: url('../../assets/Rectangle.png');
+	background-repeat: no-repeat;
+	height: 310px;
+	width: 321px;
+	position: relative;
 }
 
-.card-top{
-  width: 321px;
-  height: 286px;
-  background-color:rgba(244, 244, 244, 1);
-  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
-  position: absolute;
-  top: -10px;
-  right: -10px;
+.card-top {
+	width: 321px;
+	height: 286px;
+	background-color: rgba(244, 244, 244, 1);
+	box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
+	position: absolute;
+	top: -10px;
+	right: -10px;
 }
 
-.card-top h5{
-  font-family: var(--font3);
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 17.51px;
-  letter-spacing: 0.06em;
-  text-align: left;
-  padding: 40px 0 15px 17px;
+.card-top h5 {
+	font-family: var(--font3);
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 17.51px;
+	letter-spacing: 0.06em;
+	text-align: left;
+	padding: 40px 0 15px 17px;
 }
 
-.card-top p{
-  font-family: var(--third-family);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 21.75px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  padding: 0 5px 0 17px;
+.card-top p {
+	font-family: var(--third-family);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 21.75px;
+	letter-spacing: 0.03em;
+	text-align: left;
+	padding: 0 5px 0 17px;
 }
-  
+
 .review-btn {
-  margin: 110px 0 100px 0;
-  height: 74px;
-  width: 371px;
-  background-color: white;
-  color:#3f3f3f;
-  font-size: 20px;
-  font-weight: 500;
-  border: 2px solid rgba(184, 146, 108, 1);
-  box-shadow: 1px 2px 4px 0px rgba(15, 15, 15, 0.35);
-  cursor: pointer;  
+	margin: 110px 0 100px 0;
+	height: 74px;
+	width: 371px;
+	background-color: white;
+	color: #3f3f3f;
+	font-size: 20px;
+	font-weight: 500;
+	border: 2px solid rgba(184, 146, 108, 1);
+	box-shadow: 1px 2px 4px 0px rgba(15, 15, 15, 0.35);
+	cursor: pointer;
 }
 
 .review-btn:hover {
-  box-shadow: 2px 4px 6px 0px rgba(15, 15, 15, 0.45); /* Slightly larger shadow on hover */
+	box-shadow: 2px 4px 6px 0px rgba(15, 15, 15, 0.45);
 }
