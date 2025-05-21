@@ -89,15 +89,13 @@ const Welcome = () => {
 
       <main className="text-main">
         <section className="text">
-          <p className="first_text">Добро пожаловать на сайт</p>
           <h1 className="h1_main">VISA TRAVEL EASY!</h1>
           <div className="second_all">
             <p className="third_text">
-              США, Шенген, Великобритания, Япония — подскажем, поможем, оформим
+              США, Шенген, Великобритания, Япония
             </p>
             <p className="four_text">
-              Более 5 лет опыта и множество успешных кейсов — с нами оформление виз становится
-              простым и быстрым.
+              Подскажем, поможем, оформим!
             </p>
           </div>
           <a href="https://wa.me/13476128437" target="_blank" rel="noopener noreferrer">

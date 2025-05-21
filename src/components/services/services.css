@@ -134,7 +134,7 @@
 
 .name_cards {
 	font-family: var(--font-family);
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 24px;
 	line-height: 1.25;
 	text-transform: uppercase;
@@ -281,7 +281,6 @@
 }
 
 .details-btn:hover {
-
 	background-color: #fff;
 	border: 2px #b8926c solid;
 	color: #b8926c;
@@ -291,12 +290,12 @@
 .name_b {
 	font-weight: bolder;
 	font-family: var(--font-family);
-	font-weight: 400;
+	font-weight: 800;
 	font-size: 24px;
 	line-height: 1.25;
 	text-transform: uppercase;
 	text-align: center;
-	color: #d6d6d6;
+	color: #fff;
 }
 
 @keyframes fadeIn {
