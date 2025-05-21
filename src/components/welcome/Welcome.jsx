@@ -46,8 +46,10 @@ return (
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <html lang="ru" />
-         <link rel="preload" as="style" href="/welcome.css" />
-   </Helmet>
+<link rel="preload" as="style" href="/welcome.css" />
+        <link rel="stylesheet" href="/welcome.css" />
+        <link rel="preload" as="style" href="/welcome-adaptive.css" />
+        <link rel="stylesheet" href="/welcome-adaptive.css" />   </Helmet>
    <header className="header">
    {isMobile ? (
    <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
