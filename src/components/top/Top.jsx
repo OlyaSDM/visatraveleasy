@@ -32,7 +32,7 @@ const Top = () => {
         onClick={scrollToTop}
         style={{ display: isVisible ? 'block' : 'none' }}
       >
-        <img src={top} alt='Scroll to top' width={18} height={14} />
+        <img src={top} alt='Scroll to top' />
       </button>
     </div>
   );

@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
 <Helmet>
-  <link rel="preload" as="image" href="/assets/image-Jez0xn52.webp" imagesrcset="/assets/image-Jez0xn52.webp" imagesizes="(max-width: 600px) 100vw, 600px" />
+  <link rel="preload" as="image" href="/assets/image.webp" imagesrcset="/assets/image.webp" imagesizes="(max-width: 600px) 100vw, 600px" />
 </Helmet>
 
 

@@ -19,6 +19,13 @@
 	box-shadow: 1px 2px 2px 1px rgba(72, 73, 72, 0.25);
 }
 
+.top-toggle img {
+  width: 18px;
+  height: auto; 
+  display: block;
+}
+
+
 .form-toggle:hover {
 	background-color: var(--main-color);
 }
