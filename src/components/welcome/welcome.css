@@ -70,12 +70,20 @@ height: 100vh;
 	letter-spacing: 0.05em;
 	text-decoration: none;
 	text-align: center;
+  color: #0f0f0f;
 }
 
 .a_burgerr {
 	color: #fff;
 	text-align: center;
 	margin-top: 26px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.a_burgerr:hover {
+  color: #0f0f0f;
+
 }
 
 .li:hover .a {
