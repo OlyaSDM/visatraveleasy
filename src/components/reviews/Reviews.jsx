@@ -49,8 +49,8 @@ return (
       {reviews.map((review, index) => (
       <div key={index} className='card-rectangle'>
          <div className='card-top'>
-            <h5>{review.name}</h5>
-            <p>{review.text}</p>
+            <p className='name-rew'>{review.name}</p>
+            <p className='name-text'>{review.text}</p>
          </div>
       </div>
       ))}

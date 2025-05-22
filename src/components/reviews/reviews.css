@@ -17,6 +17,17 @@ h2 span {
 	font-weight: 700;
 }
 
+.name-rew {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 18px;
+	color: #0f0f0f;
+	text-align: left;
+	margin-left: 18px;
+}
+
+
 .wrap {
 	margin-top: 60px;
 	display: flex;
@@ -53,7 +64,7 @@ h2 span {
 	padding: 40px 0 15px 17px;
 }
 
-.card-top p {
+.name-text {
 	font-family: var(--third-family);
 	font-size: 15px;
 	font-weight: 400;
@@ -83,4 +94,5 @@ h2 span {
 	border: 2px solid rgba(184, 146, 108, 1);
 	box-shadow: 0 2px 2px 0 rgba(15, 15, 15, 0.35);
 }
+
 
