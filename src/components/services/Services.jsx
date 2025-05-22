@@ -113,11 +113,11 @@ const Services = () => {
                         <span className="faq-text">{item.question}</span>
                         <span className="faq-arrow">
                           {isActive ? (
-                            <svg width="37" height="16" viewBox="0 0 37 16" fill="none">
+                            <svg width="30" height="16" viewBox="0 0 37 16" fill="none">
                               <path d="M1.63965 15L18.6396 1L35.6396 15" stroke="#0F0F0F" strokeWidth="2" strokeLinecap="round" />
                             </svg>
                           ) : (
-                            <svg width="37" height="16" viewBox="0 0 37 16" fill="none">
+                            <svg width="30" height="16" viewBox="0 0 37 16" fill="none">
                               <path d="M1.63965 1L18.6396 15L35.6396 1" stroke="#0F0F0F" strokeWidth="2" strokeLinecap="round" />
                             </svg>
                           )}

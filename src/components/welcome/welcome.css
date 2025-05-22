@@ -87,8 +87,7 @@ height: 100vh;
 }
 
 .li:hover .a {
-	color: #b8926c;
-	text-align: center;
+	color: #fff;
 }
 
 .burger {

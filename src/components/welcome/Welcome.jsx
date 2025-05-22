@@ -67,7 +67,6 @@ const Welcome = () => {
             <ul className="contt">
               <li className="li"><a className="a" href="#about">ОБО МНЕ</a></li>
               <li className="li"><a className="a" href="#services">УСЛУГИ</a></li>
-              <li className="li"><a className="a" href="#faq">FAQ</a></li>
               <li className="li"><a className="a" href="#reviews">ОТЗЫВЫ</a></li>
               <li className="li"><a className="a" href="#contacts">КОНТАКТЫ</a></li>
             </ul>
@@ -79,7 +78,6 @@ const Welcome = () => {
             <ul>
               <li className="a_burgerr"><a className="a_burgerr" href="#about" onClick={closeMenu}>ОБО МНЕ</a></li>
               <li className="a_burgerr"><a className="a_burgerr" href="#services" onClick={closeMenu}>УСЛУГИ</a></li>
-              <li className="a_burgerr"><a className="a_burgerr" href="#faq" onClick={closeMenu}>FAQ</a></li>
               <li className="a_burgerr"><a className="a_burgerr" href="#reviews" onClick={closeMenu}>ОТЗЫВЫ</a></li>
               <li className="a_burgerr"><a className="a_burgerr" href="#contacts" onClick={closeMenu}>КОНТАКТЫ</a></li>
             </ul>
