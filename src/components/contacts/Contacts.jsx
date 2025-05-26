@@ -8,7 +8,7 @@ import { useForm, ValidationError } from '@formspree/react';
 const Contacts = () => {
 const [state, handleSubmit] = useForm('xpwzgzny');
 return (
-<footer className="footer">
+<footer id='contacts' className="footer">
    <div className="footer-overlay" />
    <section className="contacts-container">
       <div className="contacts-left">

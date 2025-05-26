@@ -43,7 +43,7 @@ setReviews((prevReviews) => [...prevReviews, ...newReviews]);
 setIsExpended(!isExpended);
 };
 return (
-<section className='reviews'>
+<section id='reviews' className='reviews'>
    <h2>Отзывы наших <span>клиентов</span></h2>
    <section className='wrap'>
       {reviews.map((review, index) => (
