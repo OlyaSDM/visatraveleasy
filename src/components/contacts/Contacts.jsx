@@ -15,7 +15,7 @@ return (
          <h5>Контакты</h5>
          <p className="footer-description">Свяжитесь с нами удобным для вас способом:</p>
          <div className="contacts-icons">
-            <a href="https://www.instagram.com/alba___usa/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/visa_travel_easy?igsh=MXFoanAxMDk5MWk5ZA==" target="_blank" rel="noopener noreferrer">
             <img className="contact-icon" src={instagram} alt="Instagram" />
             </a>
             <a href="https://wa.me/13476128437" target="_blank" rel="noopener noreferrer">
